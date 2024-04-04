@@ -1,0 +1,89 @@
+.calendar {
+    min-width: 350px;
+    min-height: 150px;
+    border: 3px solid black;
+    border-radius: 16px;
+    margin-top: 32px;
+    padding: 6px;
+    margin-bottom: 16px;
+}
+
+.month-picker {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.month {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+
+.select-month-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.date-picker {
+    display: grid;
+}
+
+.date-picker {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.calendar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.calendar-item:hover {
+    border: 2px solid black;
+}
+
+
+.selected-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 2px solid black;
+    padding: 16px;
+    margin-top: 32px;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    border-color: black;
+}

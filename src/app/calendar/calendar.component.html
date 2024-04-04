@@ -1,6 +1,20 @@
 <section class="calendar">
-  <!-- Month picker -->
-  <!-- Date picker -->
-  <!-- Time picker -->
-  <button (click)="onClick()">Test Button</button>
+    <!-- Month picker -->
+    <section class="month-picker">
+        <ng-icon class="icon" name="ionChevronBack" (click)="prevMonth()"></ng-icon>
+        <div class="month">
+        {{formattedMonth}}
+        </div>
+        <ng-icon class="icon" name="ionChevronForward" (click)="nextMonth()"></ng-icon>
+    </section>
+    <!-- Date picker -->
+    <section class="date-picker">
+        @for (item of datePicker; track $index) {
+        <div class="calendar-item" (click)="selectDate(item)">{{ item }}</div>
+        }
+    </section>
+    <!-- Time picker -->
+</section>
+<section class="selected-date">
+  {{formattedDate}}
 </section>
